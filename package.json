@@ -1,0 +1,19 @@
+{
+  "name": "playwright-hrm-automation",
+  "version": "1.0.0",
+  "description": "Production-ready Playwright JavaScript automation framework for HRMS workflows using Page Object Model.",
+  "type": "module",
+  "scripts": {
+    "test": "playwright test --config=play-wright.config.js",
+    "test:headed": "playwright test --config=play-wright.config.js --headed",
+    "test:debug": "playwright test --config=play-wright.config.js --debug",
+    "test:chromium": "playwright test --config=play-wright.config.js --project=chromium",
+    "test:firefox": "playwright test --config=play-wright.config.js --project=firefox",
+    "test:webkit": "playwright test --config=play-wright.config.js --project=webkit",
+    "auth:refresh": "playwright test --config=play-wright.config.js --project=setup",
+    "report": "playwright show-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.54.0"
+  }
+}
